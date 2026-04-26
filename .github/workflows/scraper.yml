@@ -1,4 +1,4 @@
-name: Scraping RTP Noticias
+name: Movie Data Collection
 
 on:
   push:
