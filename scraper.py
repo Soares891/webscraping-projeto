@@ -1,65 +1,29 @@
-import os
+import requests
 import json
-import logging
 from datetime import datetime
 
-import requests
-import feedparser
-from bs4 import BeautifulSoup
+API_KEY = "15758038"
 
+filmes = ["Inception", "Interstellar", "The Matrix", "Titanic", "Avatar"]
 
-RSS_URL = "https://www.rtp.pt/noticias/rss"
-DATA_FILE = "data/noticias.json"
-LOG_FILE = "logs/scraper.log"
+dados = []
 
+for filme in filmes:
+    url = f"http://www.omdbapi.com/?t={filme}&apikey={API_KEY}"
+    r = requests.get(url)
+    data = r.json()
 
-os.makedirs("data", exist_ok=True)
-os.makedirs("logs", exist_ok=True)
+    if data.get("Response") == "True":
+        registo = {
+            "title": data.get("Title"),
+            "source": "omdb",
+            "rating": float(data.get("imdbRating", 0)),
+            "votes": int(data.get("imdbVotes", "0").replace(",", "")),
+            "genre": data.get("Genre", "").split(", "),
+            "timestamp": datetime.now().isoformat()
+        }
 
+        dados.append(registo)
 
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
-
-
-def guardar_dados(dados):
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(dados, f, ensure_ascii=False, indent=4)
-
-
-def extrair_texto(url):
-    try:
-        r = requests.get(url, timeout=10)
-        soup = BeautifulSoup(r.text, "html.parser")
-        paragrafos = soup.find_all("p")
-        return " ".join(p.get_text() for p in paragrafos)
-    except:
-        return ""
-
-
-def main():
-    logging.info("Início do scraping")
-
-    feed = feedparser.parse(RSS_URL)
-    dados = []
-
-    for noticia in feed.entries[:5]:  # só 5 para testar
-        texto = extrair_texto(noticia.link)
-
-        dados.append({
-            "titulo": noticia.title,
-            "url": noticia.link,
-            "data": noticia.get("published", ""),
-            "texto": texto,
-            "recolhido_em": datetime.now().isoformat()
-        })
-
-    guardar_dados(dados)
-
-    logging.info("Scraping terminado")
-
-
-if __name__ == "__main__":
-    main()
+with open("data/filmes.json", "w", encoding="utf-8") as f:
+    json.dump(dados, f, indent=4)

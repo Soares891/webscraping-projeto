@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Inception",
+        "source": "omdb",
+        "rating": 8.8,
+        "votes": 2808796,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "timestamp": "2026-04-26T17:16:30.190671"
+    },
+    {
+        "title": "Interstellar",
+        "source": "omdb",
+        "rating": 8.7,
+        "votes": 2516752,
+        "genre": [
+            "Adventure",
+            "Drama",
+            "Sci-Fi"
+        ],
+        "timestamp": "2026-04-26T17:16:30.393871"
+    },
+    {
+        "title": "The Matrix",
+        "source": "omdb",
+        "rating": 8.7,
+        "votes": 2243093,
+        "genre": [
+            "Action",
+            "Sci-Fi"
+        ],
+        "timestamp": "2026-04-26T17:16:30.583871"
+    },
+    {
+        "title": "Titanic",
+        "source": "omdb",
+        "rating": 8.0,
+        "votes": 1389357,
+        "genre": [
+            "Drama",
+            "Romance"
+        ],
+        "timestamp": "2026-04-26T17:16:30.803765"
+    },
+    {
+        "title": "Avatar",
+        "source": "omdb",
+        "rating": 7.9,
+        "votes": 1486308,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "timestamp": "2026-04-26T17:16:31.006882"
+    }
+]
