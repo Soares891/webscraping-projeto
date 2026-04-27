@@ -1,0 +1,152 @@
+[
+    {
+        "title": "Why AI agents need interaction infrastructure",
+        "content": "To stop automation waste, enterprises must deploy interaction infrastructure that physically governs how independent AI agents operate. AI agents now populate corporate networks, reasoning through tasks and executing decisions with increasing autonomy. Yet, when these independent actors attempt to coordinate work, exchange context, or operate across varied cloud environments, the interaction framework degrades quickly. Human operators find themselves acting as the manual glue between disconnected systems, managing fragile integrations while the rules dictating permissions and data sharing remain implicit. Band, a startup based in Tel Aviv and San Francisco, has exited stealth mode with a $17 million seed round to address this infrastructure problem. The funding backs CEO Arick Goomanovsky and CTO Vlad Luzin in their effort to build a dedicated interaction layer for autonomous corporate systems. The concept mirrors earlier computing evolutions, wherein application programming interfaces required dedicated gateways and microservices necessitated a service mesh to function at scale. As distributed systems multiply under the ownership of different internal teams, adding more business logic fails to resolve the underlying instability. Rather, interaction reliability requires a distinct infrastructure layer. Market dynamics have changed in three key ways. First, autonomous actors have graduated from experimental deployments into active runtime participants managing engineering pipelines, customer support queries, and security operations. Enterprise usage is no longer a future consideration; it is an active operational state. The pressing issue involves managing what occurs when these distinct actors must collaborate. Second, the operational environment is entirely heterogeneous. Engineering teams build distinct tools across varied frameworks. These models execute on competing cloud platforms, utilise varying communication protocols, and report to separate business owners. No single vendor maintains control, and no uniform framework encapsulates the entire ecosystem. This fragmentation represents the permanent shape of the enterprise market. Third, a foundational standards layer is taking shape. Initiatives like the Model Context Protocol (MCP) afford models a uniform method for accessing external tools. Similarly, A2A communications efforts are establishing baseline conversational parameters. Yet, while protocols define the handshake, they fail to manage the pro",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/why-ai-agents-need-interaction-infrastructure/",
+        "published_at": "April 24, 2026",
+        "collected_at": "2026-04-27T09:52:20.746640+00:00",
+        "category": "AI",
+        "author": "Ryan Daws",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "The billion-dollar startup with a different idea for AI",
+        "content": "A billion dollars in startup funding for a company that employs 12 people is an indication that investors still have faith in AI. But the founder of the startup in question – AMI Labs’ Yann LeCun – believes that the breed of technology we currently term AI (large language models) is not the way through which it will develop meaningful and long-term results. Yann LeCun left his post as chief AI scientist at Meta late last year and founded Advanced Machine Intelligence Labs (AMI Labs) which, he asserts, will remain a research organisation not expected to produce a saleable product for maybe five years. The team at AMI Labs are concentrating not on huge, general-purpose language-based models, but AIs that comprise of collections of modular components, trained for and operating in specific use-cases. LeCun’s proposed system of artificial intelligence would comprise of the following types of elements: Unlike large language models that have been trained on only one source of information (the text scraped from the internet), each instance of LeCun’s AI would be given directed data relevant only to their environment and purpose. In each version, the importance of each module might be set differently. For example, the critic module would be more comprehensive in areas that operate with sensitive information, or the perception module would be paramount in systems that need to react to real-world events quickly. Each module would be trained in ways that relevant to the AI’s particular field. There have been several successful instances of this in the past, such as machine-learning systems that can teach themselves how to play a video or board game, for example. These are in contrast to the large language models that underpin the vast majority of what we currently talk about when we talk about AI. LLMs are trained as generalists, creating best-guess answers based on what they have ingested, which are then subject to tweaking either by prompt engineering via software wrappers (Claude Code being the most well-known recently), or at a deeper level by means of reasoning models (the ‘thinking out loud’ portion of basic responses fed back into the AI’s prompt before the user sees the final answers.) The financial implications of AIs produced by the type of methods proposed by AMI Labs will be interesting to the current AI industry – assuming Yann LeCun’s ideas produce fruitful and viable results. Large language models from big technology providers (Anthropic, Meta, OpenAI, ",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/the-billion-dollar-startup-with-a-different-idea-for-ai-ami-labs-yann-lecun/",
+        "published_at": "April 23, 2026",
+        "collected_at": "2026-04-27T09:52:21.591749+00:00",
+        "category": "AI",
+        "author": "Joe Green",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "NVIDIA and Google infrastructure cuts AI inference costs",
+        "content": "At the Google Cloud Next conference, Google and NVIDIA outlined their hardware roadmap designed to address the cost of AI inference at scale. The companies detailed the new A5X bare-metal instances, which run on NVIDIA Vera Rubin NVL72 rack-scale systems. Through hardware and software codesign, this architecture aims to deliver up to ten times lower inference cost per token compared to previous generations, while concurrently achieving ten times higher token throughput per megawatt. Connecting thousands of processors requires massive bandwidth to prevent processing delays. The A5X instances address this hardware challenge by pairing NVIDIA ConnectX-9 SuperNICs with Google Virgo networking technology. This configuration scales to 80,000 NVIDIA Rubin GPUs within a single site cluster, and up to 960,000 GPUs across a multisite deployment. Operating at this scale requires sophisticated workload management, as routing data across nearly a million parallel processors demands exact synchronisation to avoid idle compute time. Mark Lohmeyer, VP and GM of AI and Computing Infrastructure at Google Cloud, said: “At Google Cloud, we believe the next decade of AI will be shaped by customers’ ability to run their most demanding workloads on a truly integrated, AI‑optimised infrastructure stack. “By combining Google Cloud’s scalable infrastructure and managed AI services with NVIDIA’s industry‑leading platforms, systems and software, we’re giving customers flexibility to train, tune, and serve everything from frontier and open models to agentic and physical AI workloads—while optimising for performance, cost, and sustainability.” Beyond raw processing capabilities, data governance remains a primary issue for enterprise deployments. Highly regulated sectors, including finance and healthcare, often stall machine learning initiatives due to data sovereignty requirements and the risks of exposing proprietary information. To address these compliance mandates, Google Gemini models running on NVIDIA Blackwell and Blackwell Ultra GPUs are entering preview on Google Distributed Cloud. This deployment method allows organisations to retain frontier models entirely within their controlled environments, alongside their most sensitive data stores. The architecture incorporates NVIDIA Confidential Computing. This hardware-level security protocol ensures that training models operate within a protected environment where prompts and fine-tuning data remain encrypted. The encryption prevent",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/nvidia-and-google-infrastructure-cuts-ai-inference-costs/",
+        "published_at": "April 23, 2026",
+        "collected_at": "2026-04-27T09:52:22.472580+00:00",
+        "category": "AI",
+        "author": "Ryan Daws",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "Sony AI robot beats players as humanoid robot wins Beijing race",
+        "content": "An autonomous table tennis robot developed by Sony AI has competed against and defeated high-level human players in regulated matches, according to Reuters . The system is part of a broader category often referred to as “ physical AI ,” where artificial intelligence is applied to machines operating in real-world environments. The robot, named Ace, was designed to operate in a competitive sport environment that requires rapid decision-making and precise motor control. According to the project team, it combines high-speed perception systems with AI-driven control to execute shots under match conditions. Ace competed in matches conducted under International Table Tennis Federation rules and officiated by licensed umpires. In trials documented in April 2025, the system won three out of five matches against elite players and lost two against professional-level opponents. Sony AI reported that subsequent matches in December 2025 and early 2026 included wins against professional players. Previous table tennis robots have existed since the 1980s, but they were not able to match the performance of advanced human players. “Unlike computer games, where prior AI systems surpass human experts, physical and real-time sports like table tennis remain a major open challenge,” said Peter Dürr, director at Sony AI Zurich and lead of the project. AI systems have achieved strong results in digital environments like chess and video games, where conditions are fully simulated, Dürr said. Dürr said the system was developed to study how robots can respond with speed and accuracy in dynamic environments. The work was detailed in a study published in the journal Nature . The sport presents technical challenges due to the speed and variability of the ball, including complex spin and changing trajectories, which require rapid sensing and coordinated movement in tight time constraints, Dürr said. Ace’s architecture includes nine synchronised cameras and three vision systems, which track the ball’s movement and spin. The system processes visual data at a speed sufficient to capture motion that is difficult for the human eye to resolve. “This is fast enough to capture motion that would be a blur to the human eye,” Dürr said. The robotic platform uses eight joints to control the racket. Three control positioning, two control orientation, and three manage shot force and speed. The configuration was designed to meet the minimum mechanical requirements for competitive play. Unlike many AI sy",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/sony-ai-robot-table-tennis-humanoid-robot-beijing-race/",
+        "published_at": "April 23, 2026",
+        "collected_at": "2026-04-27T09:52:23.508005+00:00",
+        "category": "AI",
+        "author": "Muhammad Zulhusni",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "Reversing enterprise security costs with AI vulnerability discovery",
+        "content": "Automated AI vulnerability discovery is reversing the enterprise security costs that traditionally favour attackers. Bringing exploits to zero was once viewed as an unrealistic goal. The prevailing operational doctrine aimed to make attacks so expensive that only adversaries with functionally unlimited budgets could afford them, thereby disincentivising casual use. However, the recent evaluation by the Mozilla Firefox engineering team – using Anthropic’s Claude Mythos Preview – challenges this accepted status quo. During their initial evaluation with Claude Mythos Preview, the Firefox team identified and fixed 271 vulnerabilities for their version 150 release. This followed a prior collaboration with Anthropic using Opus 4.6, which yielded 22 security-sensitive fixes in version 148. Uncovering hundreds of vulnerabilities simultaneously puts a heavy strain on a team’s resources. But in today’s strict regulatory climate, doing the heavy lifting to prevent a data breach or ransomware attack easily pays for itself. Automated scanning also drives down costs; because the system continuously checks code against known threat databases, firms can cut back on hiring costly external consultants. Integrating frontier AI models into existing continuous integration pipelines introduces heavy compute cost considerations. Running millions of tokens of proprietary code through a model like Claude Mythos Preview requires dedicated capital expenditure. Enterprises must establish secure vector database environments to manage the context windows needed for vast codebases, ensuring proprietary corporate logic remains strictly partitioned and protected. Evaluating the output also demands rigorous hallucination mitigation. A model generating false-positive security vulnerabilities wastes expensive human engineering hours. Therefore, the deployment pipeline must cross-reference model outputs against existing static analysis tools and fuzzing results to validate the findings. Automated security testing relies heavily on dynamic analysis techniques, particularly fuzzing, run by internal red teams. While fuzzing is highly effective, it struggles with certain parts of the codebase. Elite security researchers overcome these limitations by manually reasoning through source code to identify logic flaws. This manual process is time-consuming and constrained by the scarcity of elite human expertise. The integration of advanced models eliminates this human constraint. Computers, completely ",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/reversing-enterprise-security-costs-with-ai-vulnerability-discovery/",
+        "published_at": "April 22, 2026",
+        "collected_at": "2026-04-27T09:52:24.337393+00:00",
+        "category": "AI",
+        "author": "Ryan Daws",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "Siemens introduces AI system for automation engineering",
+        "content": "Siemens has introduced the Eigen Engineering Agent, an AI system designed to plan and validate automation engineering tasks in operational environments. The system uses multi-step reasoning and self-correction to carry out tasks autonomously and operates directly inside engineering platforms, letting it to complete workflows from initial design through to validation. The agent is designed to interpret project requirements, generate automation code, configure industrial systems, and refine outputs until predefined performance targets are achieved. This includes tasks like programmable logic controller (PLC) programming, human-machine interface (HMI) setup, and device configuration. It is built to meet industrial requirements for correctness and reliability during execution. The system connects to Siemens’ Totally Integrated Automation Engineering platform, TIA Portal, letting it access project-specific data like structures and component relationships. This lets it generate outputs aligned with existing system configurations, including legacy or undocumented environments. It can reference control logic, system hierarchies, and component dependencies in a project, allowing outputs match existing engineering standards without requiring manual translation. The system executes tasks through a workflow that breaks down engineering problems into steps, processes them sequentially, and evaluates results against project requirements. It iterates until outputs meet the specified criteria before presenting them for an engineer’s review. Industry estimates point to a global shortfall of up to seven million manufacturing workers by 2030 , with some sectors reporting that around one in five engineering roles remain unfilled. According to Siemens, the system executes tasks two to five times faster than manual workflows while maintaining accuracy. In pilot deployments involving more than 100 companies in 19 countries, the Siemens system was applied to standard automation engineering processes. Participating organisations included ANDRITZ Metals, CASMT, and Prism Systems. Prism Systems used the system to generate and import structured control language (SCL) code, reducing execution time for these tasks. In another case, CASMT applied the system to automate device configuration, code generation, and HMI visualisation in production line development. CASMT reported reduced specialist hand-offs in engineering disciplines and shorter delivery timelines. The Eigen Engineering Age",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/siemens-ai-automation-engineering-workflows/",
+        "published_at": "April 21, 2026",
+        "collected_at": "2026-04-27T09:52:25.215755+00:00",
+        "category": "AI",
+        "author": "Muhammad Zulhusni",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "OpenAI Agents SDK improves governance with sandbox execution",
+        "content": "OpenAI is introducing sandbox execution that allows enterprise governance teams to deploy automated workflows with controlled risk. Teams taking systems from prototype to production have faced difficult architectural compromises regarding where their operations occurred. Using model-agnostic frameworks offered initial flexibility but failed to fully utilise the capabilities of frontier models. Model-provider SDKs remained closer to the underlying model, but often lacked enough visibility into the control harness. To complicate matters further, managed agent APIs simplified the deployment process but severely constrained where the systems could run and how they accessed sensitive corporate data. To resolve this, OpenAI is introducing new capabilities to the Agents SDK, offering developers standardised infrastructure featuring a model-native harness and native sandbox execution. The updated infrastructure aligns execution with the natural operating pattern of the underlying models, improving reliability when tasks require coordination across diverse systems. Oscar Health provides an example of this efficiency regarding unstructured data. The healthcare provider tested the new infrastructure to automate a clinical records workflow that older approaches could not handle reliably. The engineering team required the automated system to extract correct metadata while correctly understanding the boundaries of patient encounters within complex medical files. By automating this process, the provider could parse patient histories faster, expediting care coordination and improving the overall member experience. Rachael Burns, Staff Engineer & AI Tech Lead at Oscar Health, said: “The updated Agents SDK made it production-viable for us to automate a critical clinical records workflow that previous approaches couldn’t handle reliably enough. “For us, the difference was not just extracting the right metadata, but correctly understanding the boundaries of each encounter in long, complex records. As a result, we can more quickly understand what’s happening for each patient in a given visit, helping members with their care needs and improving their experience with us.” To deploy these systems, engineers must manage vector database synchronisation, control hallucination risks, and optimise expensive compute cycles. Without standard frameworks, internal teams often resort to building brittle custom connectors to manage these workflows. The new model-native harness helps allevia",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/openai-agents-sdk-improves-governance-sandbox-execution/",
+        "published_at": "April 16, 2026",
+        "collected_at": "2026-04-27T09:52:26.204261+00:00",
+        "category": "AI",
+        "author": "Ryan Daws",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "SAP brings agentic AI to human capital management",
+        "content": "According to SAP , integrating agentic AI into core human capital management (HCM) modules helps target operational bloat and reduce costs. SAP’s SuccessFactors 1H 2026 release aims to anticipate administrative bottlenecks before they stall daily operations by embedding a network of AI agents across recruiting, payroll, workforce administration, and talent development. Behind the user interface, these agents must monitor system states, identify anomalies, and prompt human operators with context-aware solutions. Data synchronisation failures between distributed enterprise systems routinely require dedicated IT support teams to diagnose. When employee master data fails to replicate due to a missing attribute, downstream systems like access management and financial compensation halt. The agentic approach uses analytical models to cross-reference peer data, identify the missing variable based on organisational patterns, and prompt the administrator with the required correction. This automated troubleshooting dramatically reduces the mean time to resolution for internal support tickets. Implementing this level of autonomous monitoring requires severe engineering discipline. Integrating modern semantic search mechanisms with highly structured legacy relational databases requires extensive middleware configuration. Running large language models in the background to continuously scan millions of employee records for inconsistencies consumes massive compute resources. CIOs must carefully balance the cloud infrastructure costs of continuous algorithmic monitoring against the operational savings generated by reduced IT ticket volumes. To mitigate the risk of algorithmic hallucinations altering core financial data, engineering teams are forced to build strict guardrails. These retrieve-and-generate architectures must be firmly anchored to the company’s verified data lakes, ensuring the AI only acts upon validated corporate policies rather than generalised internet training data. The SAP release attempts to streamline this knowledge retrieval by introducing intelligent question-and-answer capabilities within its learning module. This functionality delivers instant, context-aware responses drawn directly from an organisation’s learning content, allowing employees to bypass manual documentation searches entirely. The integration also introduces a growing workforce knowledge network that pulls trusted external employment guidance into daily workflows to support confident ",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/sap-brings-agentic-ai-human-capital-management/",
+        "published_at": "April 14, 2026",
+        "collected_at": "2026-04-27T09:52:27.070241+00:00",
+        "category": "AI",
+        "author": "Ryan Daws",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "Hyundai expands into robotics and physical AI systems",
+        "content": "Hyundai Motor Group is starting to look like a company building machines that act in the real world. The change centres on physical AI : Where AI is placed into robots and systems that move and respond in physical spaces. Current efforts are mainly focused on factory and industrial settings. In an interview with Semafor, chairman Chung Eui-sun said robotics and AI will play a central role in Hyundai’s next phase of growth, pushing the company beyond vehicles and into physical systems. The group plans to invest $26 billion in the US by 2028, according to United Press International, building on roughly $20.5 billion invested over the past 40 years. A large part of that spending is tied to robotics and AI-driven systems that Hyundai is combining into a single approach. Chung described robotics and physical AI as important to Hyundai’s long-term direction, adding that the company is developing robots to work with people not replace them. Hyundai is working on systems where robots and humans share tasks in the same space. This includes humanoid robots developed by Boston Dynamics, which Hyundai acquired a controlling stake in 2021. Machines are being prepared for manufacturing use, with deployment planned around 2028. The company expects to scale production to up to 30,000 units per year by 2030, with the goal to improve work on the factory floor. Robots may handle repetitive or physically demanding tasks, while humans focus on oversight and coordination. Chung said this kind of setup could help improve efficiency and product quality as customer expectations change. Current deployments remain focused on industrial settings, though Hyundai is exploring other uses. Potential areas include logistics and mobility services that combine vehicles with AI systems. These may affect deliveries and shared services. While these uses are still developing, manufacturing remains the main testing ground. Factories remain the place where Hyundai is putting these ideas into practice. The company is already working on software-driven manufacturing systems in its US operations, combining data and robotics to manage production. Physical AI builds on this by adding machines that adjust their actions based on real-time data. Chung said changes in regulations and customer demand are pushing the company to rethink how it operates in regions. Hyundai’s response is a mix of global expansion and local production, with AI and robotics helping standardise processes. The company continues to",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/hyundai-expands-into-robotics-and-physical-ai-systems/",
+        "published_at": "April 14, 2026",
+        "collected_at": "2026-04-27T09:52:27.944090+00:00",
+        "category": "AI",
+        "author": "Muhammad Zulhusni",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "AI in law firms entering its closing summaries",
+        "content": "In an interview with Artificial Lawyer , Paris-based AI-native consulting firm owner, Olivier Chaduteau, set out a three-part account of the current state of AI in the legal sector. At first, lawyers dismissed AI as irrelevant to expert work. In the second, organisations bought licences to LLMs to signal activity to partners and/or clients, but little else. He says the market has now entered a third stage, in which firms understand it’s time to engage with the AI tools at their disposal. Chaduteau said to engage with AI on an operational level, firms should focus on change management, choosing the right operating models, and reforming their business models. It’s necessary to rewrite workflows, re-train the lawyers on the books, set standards for AI use, and decide where human review needs to be in the workflow. These are, he acknowledged, political questions that are much more challenging than stage one’s decision, which comprised largely of which large language model or law-specific AI service to buy into. For law practices, the presence of AI in the workflow may instigate a farewell to cost-plus pricing and hourly billing, with firms adopting what he terms value pricing instead – something that many firms have considered and in some cases, already adopted independently of technological issues. There are questions posed about fundamental billing methods, after all, if firms use AI to reduce the time spent drafting papers or reviewing documents, and can undertake research more quickly. The correlation between a lawyer’s time and income is weakened, and law companies may have to start thinking differently. Senior managers at law firms have two choices, therefore. AI can be used inside existing billing models for as long as possible, optimising the ratio of cost to revenue. The other is to redesign the firm’s service and prices in line with an AI-enabled, streamlined workflow, and offer clients services based on a new billing model that’s reflective of the automation in play at the law office. Chaduteau’s view is that clients will eventually force the issue – someone, somewhere will begin to offer better value based as a result of their increased efficiencies (most likely a new company unencumbered by traditional billing practices) and the rest of the market will be forced to respond and offer the same. This is a classic case of technological disruption. Chaduteau said corporate legal departments are increasingly pressured to show how they are implementing A",
+        "source": "AI News",
+        "url": "https://www.artificialintelligence-news.com/news/ai-in-law-firms-entering-its-closing-summaries/",
+        "published_at": "April 22, 2026",
+        "collected_at": "2026-04-27T09:52:29.055529+00:00",
+        "category": "AI",
+        "author": "AI News",
+        "comments": 0,
+        "keywords": [
+            "AI",
+            "Artificial Intelligence"
+        ]
+    }
+]
