@@ -126,10 +126,7 @@ def main():
                 "url": url,
                 "published_at": published_at,
                 "collected_at": datetime.now(timezone.utc).isoformat(),
-                "category": "AI",
                 "author": author,
-                "comments": comments,
-                "keywords": ["AI", "Artificial Intelligence"]
             }
 
             noticias.append(registo)
