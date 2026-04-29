@@ -13,6 +13,12 @@ from bs4 import BeautifulSoup
 
 FONTES = [
     {
+        "name": "AI News - Latest",
+        "domain": "artificialintelligence-news.com",
+        "base_url": "https://www.artificialintelligence-news.com/news/",
+        "page_pattern": "https://www.artificialintelligence-news.com/news/page/{page}/"
+    },
+    {
         "name": "AI News",
         "domain": "artificialintelligence-news.com",
         "base_url": "https://www.artificialintelligence-news.com/",
