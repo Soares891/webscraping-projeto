@@ -35,7 +35,7 @@ FONTES = [
 DATA_FILE = "data/news.json"
 LOG_FILE = "logs/scraper.log"
 
-MAX_NOTICIAS = 550
+MAX_NOTICIAS = 2000
 MAX_PAGINAS_POR_FONTE = 80
 
 os.makedirs("data", exist_ok=True)
