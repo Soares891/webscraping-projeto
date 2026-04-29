@@ -129,10 +129,11 @@ def extrair_links_da_pagina(url_pagina, domain):
     soup = BeautifulSoup(response.text, "html.parser")
 
     links = []
+    vistos = set()
 
-    for link in soup.find_all("a", href=True):
-        title = limpar_texto(link.get_text(" ", strip=True))
-        href = link.get("href")
+    # Apanha qualquer link para notícias
+    for a in soup.find_all("a", href=True):
+        href = a.get("href")
         url = urljoin(url_pagina, href)
 
         parsed = urlparse(url)
@@ -143,6 +144,20 @@ def extrair_links_da_pagina(url_pagina, domain):
         if "/news/" not in parsed.path:
             continue
 
+        if url in vistos:
+            continue
+
+        # Tenta obter título pelo texto do link
+        title = limpar_texto(a.get_text(" ", strip=True))
+
+        # Se o link não tiver texto, tenta procurar título no bloco pai
+        if len(title) < 20:
+            parent = a.find_parent(["article", "div", "li"])
+            if parent:
+                h = parent.find(["h1", "h2", "h3", "h4"])
+                if h:
+                    title = limpar_texto(h.get_text(" ", strip=True))
+
         if not title or len(title) < 20:
             continue
 
@@ -151,6 +166,9 @@ def extrair_links_da_pagina(url_pagina, domain):
             "url": url
         })
 
+        vistos.add(url)
+
+    print(f"Links encontrados nesta página: {len(links)}")
     return links
 
 
