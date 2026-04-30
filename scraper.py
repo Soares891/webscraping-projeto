@@ -42,7 +42,7 @@ DATA_FILE = "data/news.json"
 LOG_FILE = "logs/scraper.log"
 
 MAX_NOTICIAS = 2000
-MAX_PAGINAS_POR_FONTE = 80
+MAX_PAGINAS_POR_FONTE = 100
 
 os.makedirs("data", exist_ok=True)
 os.makedirs("logs", exist_ok=True)
@@ -66,6 +66,17 @@ def gerar_id(url):
     return hashlib.md5(url.encode()).hexdigest()
 
 
+def carregar_existentes():
+    if not os.path.exists(DATA_FILE):
+        return []
+
+    try:
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+
 def extrair_detalhes(url):
     response = requests.get(url, headers=headers, timeout=20)
     response.raise_for_status()
@@ -73,6 +84,7 @@ def extrair_detalhes(url):
     soup = BeautifulSoup(response.text, "html.parser")
     texto_pagina = soup.get_text(" ", strip=True)
 
+    # Conteúdo da notícia
     paragraphs = soup.find_all("p")
     conteudos_validos = []
 
@@ -82,7 +94,7 @@ def extrair_detalhes(url):
         if len(texto) < 50:
             continue
 
-        ignorar = [
+        lixo = [
             "AI News is part of",
             "TechForge",
             "View all posts by",
@@ -92,21 +104,26 @@ def extrair_detalhes(url):
             "The technical storage or access",
             "Preferences",
             "Statistics",
-            "Marketing"
+            "Marketing",
+            "All our premium content",
+            "latest tech news delivered straight to your inbox",
+            "Manage {vendor_count} vendors"
         ]
 
-        if any(frase in texto for frase in ignorar):
+        if any(frase.lower() in texto.lower() for frase in lixo):
             continue
 
         conteudos_validos.append(texto)
 
     content = limpar_texto(" ".join(conteudos_validos))[:2500]
 
+    # Autor
     author = None
     author_link = soup.find("a", href=re.compile(r"/author/"))
     if author_link:
         author = limpar_texto(author_link.get_text(" ", strip=True))
 
+    # Data de publicação
     published_at = None
     date_match = re.search(
         r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}",
@@ -131,7 +148,6 @@ def extrair_links_da_pagina(url_pagina, domain):
     links = []
     vistos = set()
 
-    # Apanha qualquer link para notícias
     for a in soup.find_all("a", href=True):
         href = a.get("href")
         url = urljoin(url_pagina, href)
@@ -144,13 +160,17 @@ def extrair_links_da_pagina(url_pagina, domain):
         if "/news/" not in parsed.path:
             continue
 
+        # MUITO IMPORTANTE:
+        # impede guardar páginas de paginação como se fossem notícias
+        if "/page/" in parsed.path:
+            continue
+
         if url in vistos:
             continue
 
-        # Tenta obter título pelo texto do link
         title = limpar_texto(a.get_text(" ", strip=True))
 
-        # Se o link não tiver texto, tenta procurar título no bloco pai
+        # Se o link não tiver texto, tenta ir buscar o título ao bloco pai
         if len(title) < 20:
             parent = a.find_parent(["article", "div", "li"])
             if parent:
@@ -159,6 +179,23 @@ def extrair_links_da_pagina(url_pagina, domain):
                     title = limpar_texto(h.get_text(" ", strip=True))
 
         if not title or len(title) < 20:
+            continue
+
+        titulos_invalidos = [
+            "Manage {vendor_count} vendors",
+            "All our premium content",
+            "Subscribe",
+            "Newsletter",
+            "Advertise",
+            "Contact",
+            "Privacy Policy",
+            "Cookie Policy",
+            "Terms",
+            "About",
+            "Events"
+        ]
+
+        if any(t.lower() in title.lower() for t in titulos_invalidos):
             continue
 
         links.append({
@@ -172,22 +209,13 @@ def extrair_links_da_pagina(url_pagina, domain):
     return links
 
 
-def carregar_existentes():
-    if not os.path.exists(DATA_FILE):
-        return []
-
-    try:
-        with open(DATA_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except:
-        return []
-
-
 def main():
     logging.info("Início do scraping com múltiplas fontes e paginação")
 
     noticias = carregar_existentes()
-    urls_vistos = {noticia["url"] for noticia in noticias if "url" in noticia}
+    urls_vistos = {noticia.get("url") for noticia in noticias if noticia.get("url")}
+
+    print("Notícias existentes:", len(noticias))
 
     for fonte in FONTES:
         print(f"\nFonte: {fonte['name']}")
@@ -246,6 +274,7 @@ def main():
                 if len(noticias) >= MAX_NOTICIAS:
                     break
 
+            # Guarda progressivamente para não perder dados
             with open(DATA_FILE, "w", encoding="utf-8") as f:
                 json.dump(noticias, f, ensure_ascii=False, indent=4)
 
@@ -256,6 +285,9 @@ def main():
 
         if len(noticias) >= MAX_NOTICIAS:
             break
+
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(noticias, f, ensure_ascii=False, indent=4)
 
     logging.info(f"Foram recolhidas {len(noticias)} notícias")
     print("\nTotal de notícias:", len(noticias))
