@@ -15208,5 +15208,18 @@
         "published_at": "April 30, 2026",
         "collected_at": "2026-04-30T10:00:13.289834+00:00",
         "author": "Dashveenjit Kaur"
+    },
+    {
+        "id": "0358810cf77f74f98b89346a67e42754",
+        "title": "A guide to APIs, MCPs, and MCP Gateways",
+        "content": "APIs and MCPs are often mentioned in the same breath as ways that systems can exchange information, but they are designed differently and have different purposes. This article hopes to explain the differences and how software developers and users should approach interaction with each. An API is mainly found in software applications, while an MCP (Model Context Protocol), is used by large language models. APIs let one application talk to another, and an MCP lets an AI model use data and tools in structured ways. The difference comes about because LLMs, responding to user requests, need to choose which tools and information it thinks it needs to achieve an outcome. An API sends a request in an agreed format to another software instance, and receives a response in the agreed format, with the details of each exchange’s protocols (or methods of behaviour) hard-coded. Developers write code to call out to an API and create code to parse, or handle, the response. This makes APIs precise and reliable – although the interchange can falter if either party changes the code governing the API’s behaviour. APIs are still important to systems using LLMs, and many AI-based systems rely on APIs to function. A model may request data, and get responses via an API. MCPs are used when LLMs need access to data in situations like needing to query business data repositories, read the contents of particular files, or trigger an action. MCPs give models a structured way to access multiple data sources via one interface. An MCP server exposes data in a standard format according to rules set up in advance. These rules determine what is available and to whom or what. The important difference is that MCPs are designed for a model to be the direct consumer of data. The model suggests which tools or resources it requires according to what it thinks may be relevant to the user’s request. In some systems, APIs remain in use, but have an MCP placed between them and the user. An MCP server might call an API ‘behind the scenes’. However, an API could return more information by default than a model needs to achieve a task. But as every byte of data will need to be processed by the LLM, this can burn through many more tokens than are necessary. Too much information increases costs and can make the model’s answer less accurate. For example, an API might return 50 database fields about a customer, but the LLM requires a single account status entry. Sending all 50 fields gives the model more to pro",
+        "source": {
+            "name": "AI News - Latest",
+            "domain": "artificialintelligence-news.com"
+        },
+        "url": "https://www.artificialintelligence-news.com/news/a-guide-to-apis-and-mcps-and-mcp-gateways/",
+        "published_at": "April 30, 2026",
+        "collected_at": "2026-04-30T12:17:52.479522+00:00",
+        "author": "AI News"
     }
 ]
