@@ -15221,5 +15221,18 @@
         "published_at": "April 30, 2026",
         "collected_at": "2026-04-30T12:17:52.479522+00:00",
         "author": "AI News"
+    },
+    {
+        "id": "e8953c14082a20ca3a53d2400fc1405d",
+        "title": "Per-token AI charges come to GitHub Copilot",
+        "content": "As of 1st June 2026, GitHub Copilot will charge its users on the basis of the tokens they use, rather than a flat rate subscription model. The model that’s seeing the shutters closed on it is, or rather was, simple to understand and use. Users were given a set number of ‘Premium Requests’ according to their subscription tier. A complex coding task that may have taken many hours to complete used one premium request. Posing a relatively trivial question also counted as a single premium request. However, the change which is soon to affect GitHub Copilot users aligns the pricing models with those of API charges to large language models, more common among business plans. On the new GitHub Copilot pricing scheme, the most requests will be measured according to the tokens used by, input to, and output from the LLM at the heart of Copilot. A token is often described as representing around three-quarters of a word. Thus, giving an LLM a text of 10,000 words to examine would equate to 12,000-13,000 tokens of content. In developer terms, if a body of code which Copilot were to examine (for refactoring or bug-hunting for example), comprised of 10,000 ‘words’ (expressions, statements, variable names, functions, and so on), then that would count towards their allotted tokens for the month. Prompt text, as inputs, will also count, as will the outputs from Copilot. The pricing tiers coming into effect next month remain pegged at their current levels, but instead of being allotted a number of queries per month, users are given ‘AI Credits’ to the same value. A base-tier Copilot Pro subscriber ($10pcm) will receive 1,000 credits, with GitHub saying that at present one AI Credit is worth one US cent. The number of tokens each credit buys will depend on the model used, the input/output mix, the size of the cache (data held in the LLM’s memory for context), and feature requested. Thus, if a developer uses mostly simple queries, they are likely not to have to buy extra credits each month. Conversely, multi-agent queries about a complex, lengthy code base will empty the AI Credit account more quickly. Queries to the most-advanced frontier models will cost more than to the less-powerful. GitHub’s pricing changes do include some compensatory benefits for users: Code completions (similar to a phone’s auto-complete function) and Next Edit suggestions will remain free. The changes to GitHub’s pricing model are in line with similar changes from other companies. Anthropic and OpenAI ha",
+        "source": {
+            "name": "AI News - Latest",
+            "domain": "artificialintelligence-news.com"
+        },
+        "url": "https://www.artificialintelligence-news.com/news/per-token-ai-charging-comes-to-github-copilot/",
+        "published_at": "May 1, 2026",
+        "collected_at": "2026-05-01T11:12:48.479060+00:00",
+        "author": "Joe Green"
     }
 ]
