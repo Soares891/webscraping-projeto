@@ -15234,5 +15234,18 @@
         "published_at": "May 1, 2026",
         "collected_at": "2026-05-01T11:12:48.479060+00:00",
         "author": "Joe Green"
+    },
+    {
+        "id": "38393432b2c27c6f8bacd5b713699d9f",
+        "title": "SAP: How enterprise AI governance secures profit margins",
+        "content": "According to SAP , enterprise AI governance secures profit margins by replacing statistical guesses with deterministic control. Ask a consumer-grade model to count the words in a document, and it will often miss the mark by ten percent. Manos Raptopoulos, Global President of Customer Success Europe, APAC, Middle East & Africa at SAP, observes that the operational gap between near-perfect and perfect is absolute. “The distance between 90% and 100% accuracy is not incremental. In our world, it is existential,” notes Raptopoulos. As organisations push large language models into production environments, Raptopoulos emphasises that the evaluation criteria have formally transitioned toward precision, governance, scalability, and tangible business impact. The pressing challenge facing corporate boards centres on the evolution from passive tools to active digital actors, a transition Raptopoulos identifies as the primary governance moment and will be among the topics that SAP will be focusing on at this year’s AI & Big Data Expo North America . Agentic AI systems now possess the capability to plan, reason, orchestrate with other agents, and execute workflows autonomously. Because these systems interact directly with sensitive data and influence decisions at scale, Raptopoulos argues that failing to govern them exactly as one governs a human workforce exposes the organisation to severe operational risk. He warns that agent sprawl will mirror the shadow IT crises of the past decade, though the stakes are categorically higher. Establishing agent lifecycle management, defining autonomy boundaries, enforcing policy, and instituting continuous performance monitoring are mandatory requirements, according to his framework. Integrating modern vector databases (which map the semantic relationships of enterprise language) with legacy relational architectures demands immense engineering capital. Teams must actively restrict the agent’s inference loop to prevent hallucinations from corrupting financial or supply chain execution paths. Setting these strict parameters drives up computational latency and hyperscaler compute costs, altering initial P&L projections. When an autonomous model requires constant, high-frequency database querying to maintain deterministic outputs, the associated token costs multiply quickly. Governance becomes a hard engineering constraint rather than a compliance checklist. Raptopoulos argues that corporate boards must resolve three baseline issues bef",
+        "source": {
+            "name": "AI News - Latest",
+            "domain": "artificialintelligence-news.com"
+        },
+        "url": "https://www.artificialintelligence-news.com/news/sap-how-enterprise-ai-governance-secures-profit-margins/",
+        "published_at": "May 1, 2026",
+        "collected_at": "2026-05-01T13:41:22.054087+00:00",
+        "author": "Ryan Daws"
     }
 ]
