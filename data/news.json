@@ -15247,5 +15247,31 @@
         "published_at": "May 1, 2026",
         "collected_at": "2026-05-01T13:41:22.054087+00:00",
         "author": "Ryan Daws"
+    },
+    {
+        "id": "47384021c202872ec21da8fb3fc45e9a",
+        "title": "Physical AI raises governance questions for autonomous systems",
+        "content": "Governance around Physical AI is becoming harder as autonomous AI systems move into robots, sensors, and industrial equipment. The issue is not only whether AI agents can complete tasks. It is how their actions are tested, monitored, and stopped when they interact with real-world systems. Industrial robotics already provides a large base for that discussion. The International Federation of Robotics said 542,000 industrial robots were installed worldwide in 2024, more than double the annual level recorded a decade earlier. It expects installations to reach 575,000 units in 2025 and pass 700,000 units by 2028. Market researchers are also applying the Physical AI label to a wider group of systems, including robotics, edge computing, and autonomous machines. Grand View Research estimated the global Physical AI market at US$81.64 billion in 2025 and projected it to reach US$960.38 billion by 2033, though the category depends on how vendors define intelligence in physical systems. The governance challenge is different from software-only automation because physical systems can operate around workplaces, infrastructure, and human users. They can also be connected to equipment that requires clear safety limits. A model output can become a robot movement or a machine instruction. It can also become a decision based on sensor data. That makes safety limits and escalation paths part of system design. Google DeepMind’s robotics work is one recent example of how AI models are being adapted for this environment. The company introduced Gemini Robotics and Gemini Robotics-ER in March 2025, describing them as models built on Gemini 2.0 for robotics and embodied AI. Gemini Robotics is a vision-language-action model designed to control robots directly, while Gemini Robotics-ER focuses on embodied reasoning, including spatial understanding and task planning. A robot using this type of model may need to identify an object, understand an instruction, and plan a sequence of movements. It also needs to assess whether the task has been completed correctly. That creates a control problem that includes both model behaviour and the mechanical limits of the system. Google DeepMind said useful robots need generality, interactivity, and dexterity. Generality covers unfamiliar objects and environments. Interactivity relates to human input and changing conditions. Dexterity refers to physical tasks that require precise movement. In its launch materials, Google DeepMind said Gemini Robotics",
+        "source": {
+            "name": "AI News - Latest",
+            "domain": "artificialintelligence-news.com"
+        },
+        "url": "https://www.artificialintelligence-news.com/news/physical-ai-governance-autonomous-systems/",
+        "published_at": "May 4, 2026",
+        "collected_at": "2026-05-04T11:56:08.091034+00:00",
+        "author": "Muhammad Zulhusni"
+    },
+    {
+        "id": "a445e4b9b891b16f67e78eaee610542a",
+        "title": "Google made agentic AI governance a product. Enterprises still have to catch up.",
+        "content": "Two weeks ago at Google Cloud Next ’26 in Las Vegas, Google did something the enterprise AI industry has been dancing around for the better part of two years: it made agentic AI governance a native product feature, not an afterthought. The centrepiece announcement was the Gemini Enterprise Agent Platform, pitched as the successor to Vertex AI and described by Google as a comprehensive platform to build, scale, govern, and optimise agents. What made it notable wasn’t the model access or the TPU upgrades, significant as those are. It was the architecture underneath: every agent built on the platform gets a unique cryptographic identity for traceability and auditing, while Agent Gateway handles oversight of interactions between agents and enterprise data. Governance, in other words, ships with the product. That design choice is a direct response to a problem that has quietly been undermining enterprise AI deployments across the board. A survey of 1,879 IT leaders by OutSystems, released in April, puts the numbers plainly: 97% of organisations are already exploring agentic AI strategies, and 49% describe their own capabilities as advanced or expert. Yet only 36% have a centralised approach to agentic AI governance, and just 12% use a centralised platform to maintain control over AI sprawl. That is an 85-point gap between confidence and actual control, and it is not improving fast enough. Gartner’s 2026 Hype Cycle for Agentic AI frames the same tension differently. Only 17% of organisations have actually deployed AI agents to date, yet more than 60% expect to do so within two years, the most aggressive adoption curve Gartner has recorded for any emerging technology in the survey’s history. The hype cycle places agentic AI squarely at the Peak of Inflated Expectations, with governance, security, and cost-management capabilities still maturing well behind deployment intent. The production reality is considerably more sobering. Multiple independent analyses put the share of agentic AI pilots that have reached genuine production scale at somewhere between 11% and 14%. The rest, the other 86% to 89%, have stalled, been quietly shelved, or never moved beyond proof-of-concept. Governance breakdowns and integration complexity are consistently cited as the primary causes, ahead of any technical shortcomings in the models themselves. At Cloud Next ’26, the message from Google was less about model capability and more about who owns the control plane. Bain & Company’s post",
+        "source": {
+            "name": "AI News - Latest",
+            "domain": "artificialintelligence-news.com"
+        },
+        "url": "https://www.artificialintelligence-news.com/news/agentic-ai-governance-enterprise-readiness-google/",
+        "published_at": "May 4, 2026",
+        "collected_at": "2026-05-04T11:56:09.718715+00:00",
+        "author": "Dashveenjit Kaur"
     }
 ]
